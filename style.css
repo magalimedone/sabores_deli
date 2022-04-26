@@ -1,0 +1,233 @@
+html {
+    box-sizing:border-box;
+}
+
+body, header{
+    display: block;
+}
+
+main {
+    text-align: center;
+}
+
+body{
+    background: #ffffff;
+    width: 980px;
+    margin:auto;
+}
+
+header {
+    width: 100%;
+}
+
+.caja{
+    position: relative;
+    margin: 0 10px;
+    width:100%;
+}
+
+.logo {
+    width: 300px;
+    margin: 10px 0 0 10px;
+    border-color: #ffffff;
+
+}
+
+.menu {
+    position: absolute;
+    top:150px;
+    right:150px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    margin: 0 30px;
+}
+
+.menu ul a {
+    display:block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #191C26;
+    font-size: 42px;
+    font-family: 'Square Peg', cursive;
+    background-color: white;
+
+}
+
+.menu a:hover {
+    color: #ac71a7;
+    transition: 0.5s all;
+    background-color: white;
+}
+
+.menu ul li ul {
+    display: none;
+    margin:0;
+    position:absolute;
+}
+
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin: 10px 0 0 350px;
+    }
+    nav{
+        position: static;
+        font-family: 'Square Peg', cursive;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.productos-en-venta{ /* caja que me contiene todos los productos*/
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.foto-productos { /*estilo de las fotos incluidas en los productos*/
+    width: 90% ;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 20%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.productos li{
+    display: inline-block;
+    width: 430px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-family: 'Square Peg', cursive;
+    font-size:35px;
+    margin: 10px;
+}
+
+.productos li:hover {
+    opacity: 0.7;
+    font-size:35px;
+    width: 435px;
+    transition: 0.4s;
+}
+.productos li:hover h2{
+    font-size: 45px;
+    opacity: 0.7;
+}
+
+/*tortas HTML */
+.tortas {
+    display: flex;
+    width: 980px;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.foto-tortas {
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 20%;
+    text-align: center;
+    margin: 10px;
+}
+
+.tortas div:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+/*Formulario de contacto */
+
+form{
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+}
+
+form label{
+    display: block;
+    font-size: 30px;
+    margin: 10px;
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+}
+
+.input-padron{
+    margin: 20px;
+    padding: 10px 20px;
+    width: 70%;
+    font-family: 'Square Peg', cursive;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.enviar{
+    width: 200px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: rgb(222, 183, 231);
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+    text-align: center;
+
+}
+
+.enviar:hover{
+    background: rgb(196, 75, 233);
+    transform: scale(1.02);
+    transform: skewX(20deg);
+}
+
+.mapa{
+    display: block;
+    font-family: 'Square Peg', cursive;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.donde-estamos{
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+
+}
+
+footer {
+    color: #030405;
+    text-align: center;
+    bottom: 0;
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+.foto-footer{
+    padding-top: 15px;
+    width: 30px;
+    font-size: 10px;
+    text-align: center;
+
+  }
